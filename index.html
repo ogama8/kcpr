@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='kcpr-app'>
+<head>
+   <title>KCPR</title>
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+   <div id="content">
+
+   <div id="logo"></div>
+
+   <audio controls>
+      <source src="http://129.65.35.106:8000/KCPRMP3" type='audio/mpeg'>
+      The stream only works with Chrome, Safari, and IE
+   </audio> 
+
+   <div id="header" ng-controller="HeaderCtrl">
+      <ul>
+         <li ng-class="{ active : $state.includes('news') }">
+            <a href="#/">News</a>
+         </li>
+         <li ng-class="{active : $state.includes('schedule') }">
+            <a href="#/schedule">Schedule</a>
+         </li>
+         <li ng-class="{active : $state.includes('join') }">
+            <a href="#/join">Join</a>
+         </li>
+         <li ng-class="{active : $state.includes('contact') }">
+            <a href="#/contact">Contact</a>
+         </li>
+         <li ng-class="{active : $state.includes('about') }">
+            <a href="#/about">About</a>
+         </li>
+      </ul>
+   </div>
+
+   <div ui-view></div>
+
+   <div id="footer-help"></div>
+   </div>
+
+
+
+
+   <div id="footer">
+      <p>California Polytechnic State Univserity > College of Liberal Arts > Journalism Department > KCPR</p>
+   </div>
+
+   <script src="js/lib/angular/angular.js"></script>
+   <script src="js/lib/angular-ui-router/release/angular-ui-router.js"></script>
+   <script src="js/underscore.js"></script> 
+   <script src="js/app.js"></script> 
+   <script src="js/controllers.js"></script> 
+
+</body>
+</html>

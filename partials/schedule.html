@@ -1,0 +1,28 @@
+<h1>schedule</h1>
+<br/>
+
+<table>
+   <tr>
+      <th>Time</th>
+      <th>Sunday</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+   </tr>
+
+   <tr ng-repeat="entry in rows">
+      <td>{{ entry.title.$t }} </td>
+      <td rowspan={{entry.gsx$sun.rowspan}} ng-hide="entry.gsx$sun.$t == '' && !first" class="{{ entry.gsx$sun.type}}">{{ entry.gsx$sun.$t }}</td>
+      <td rowspan={{entry.gsx$mon.rowspan}} ng-hide="entry.gsx$mon.$t == '' && !first" class="{{ entry.gsx$mon.type}}">{{ entry.gsx$mon.$t }}</td>
+      <td rowspan={{entry.gsx$tues.rowspan}} ng-hide="entry.gsx$tues.$t == '' && !$first" class="{{ entry.gsx$tues.type}}">{{ entry.gsx$tues.$t }}</td>
+      <td rowspan={{entry.gsx$wed.rowspan}} ng-hide="entry.gsx$wed.$t == '' && !$first" class="{{ entry.gsx$wed.type}}">{{ entry.gsx$wed.$t }}</td>
+      <td rowspan={{entry.gsx$thurs.rowspan}} ng-hide="entry.gsx$thurs.$t == '' && !$first" class="{{ entry.gsx$thurs.type}}">{{ entry.gsx$thurs.$t }}</td>
+      <td rowspan={{entry.gsx$fri.rowspan}} ng-hide="entry.gsx$fri.$t == '' && !$first" class="{{ entry.gsx$fri.type}}">{{ entry.gsx$fri.$t }}</td>
+      <td rowspan={{entry.gsx$sat.rowspan}} ng-hide="entry.gsx$sat.$t == '' && !$first" class="{{ entry.gsx$sat.type}}">{{ entry.gsx$sat.$t }}</td>
+   </tr>
+
+</table>
+

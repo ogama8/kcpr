@@ -1,0 +1,52 @@
+* {
+   margin: 0;
+}
+
+html, body {
+   height: 100%;
+}
+
+#content {
+   min-height: 100%;
+   height: auto !important;
+   height: 100%;
+   margin: 0 auto -50px;
+}
+
+#footer, #footer-help{
+   height: 50px;
+}
+
+#logo {
+   background-image: url('http://kcpr.org/images/svg/kcpr_final_logo_horiz_color_nobg.svg');
+   background-color: #000;
+   background-repeat: no-repeat;
+   background-position: center;
+   
+   height: 110px;
+   width: 500px;
+}
+
+#header li.active a {
+   color:red;
+}
+
+table * {
+   border: black solid 1px;
+}
+
+td.otto {
+   background-color: blue;
+}
+
+td.talk {
+   background-color: yellow;
+}
+
+td.spec {
+   background-color: green;
+}
+
+td.reg {
+   background-color: red;
+}
