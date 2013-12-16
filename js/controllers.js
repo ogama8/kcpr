@@ -1,34 +1,15 @@
 angular.module('controllers', [])
 
-.controller('HeaderCtrl', function($scope) {
-})
+.controller('HeaderCtrl', function($scope, $location) {
 
-.controller('NewsCtrl', function($scope, tf) {
+   $scope.$location = $location;
 
-   tf.fetch('345690956013633536', 'timeline', 3, true, true, true, '', false, handleTweets, false);
-
-   function handleTweets(tweets){
-       var x = tweets.length;
-       var n = 0;
-       var element = document.getElementById('timeline');
-       var html = '<ul>';
-       while(n < x) {
-         html += '<li>' + tweets[n] + '</li>';
-         n++;
-       }
-       html += '</ul>';
-       element.innerHTML = html;
-   }
-
+   $scope.a = document.getElementById('stream');
 })
 
 .controller('ScheduleCtrl', function($scope, schedule) {
 
-   console.log(schedule);
-
    $scope.rows = schedule.feed.entry;
-
-   console.log($scope.rows.length);
 
    _.each(schedule.feed.entry, function(row, index) {
 
@@ -73,7 +54,6 @@ angular.module('controllers', [])
          }
       }
    })
-
 
    $scope.shows = schedule;
 

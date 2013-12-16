@@ -1,52 +1,170 @@
 * {
    margin: 0;
+   font-family: sans-serif;
 }
 
 html, body {
    height: 100%;
 }
 
+body {
+   font-size: 75%;
+   line-height: 18px;
+}
+
+a {
+   text-decoration: none;
+   color: #E8573F;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+.center {
+   margin: 0 auto;
+   display: block;
+}
+
 #content {
    min-height: 100%;
    height: auto !important;
    height: 100%;
-   margin: 0 auto -50px;
+   margin: 0 auto -30px;
+   width: 600px;
+   background-color: #eee;
 }
 
 #footer, #footer-help{
-   height: 50px;
+   min-height: 30px;
+   width: 600px;
+   margin: 0 auto;
+   text-align: center;
 }
 
 #logo {
-   background-image: url('http://kcpr.org/images/svg/kcpr_final_logo_horiz_color_nobg.svg');
-   background-color: #000;
+   background-image: url('/assets/img/kcpr_final_logo_horiz_color_nobg.svg');
+   background-color: #666;
    background-repeat: no-repeat;
    background-position: center;
    
    height: 110px;
-   width: 500px;
+   width: 600px;
+   margin: 0 auto;
 }
 
-#header li.active a {
-   color:red;
+#audio-wrapper {
+
+   background-color: #666;
+   padding: 10px 0px;
+
 }
 
-table * {
-   border: black solid 1px;
+#play-button {
+   height: 10px;
+   width: 10px;
+   background-color: red;
+   margin: 0 auto;
+   display: block;
 }
 
-td.otto {
+#play-button.active {
    background-color: blue;
 }
 
+#header, #footer  {
+   background-color: #666;
+   color: #fff;
+   text-align: center;
+}
+
+#header a {
+   margin: 0 20px;
+}
+
+#header-wrapper {
+   border-radius: 1px;
+}
+
+#footer a {
+   margin: 0 4px;
+}
+
+#header a, #footer a {
+   text-decoration: none;
+   text-transform: lowercase;
+   color: #fff;
+   line-height: 30px;
+}
+
+#header a.active, #footer a.active {
+   color: #E8573F;
+}
+
+#header a:hover, #footer a:hover {
+   text-decoration: underline;
+
+}
+
+ul#contacts {
+   list-style: none;
+   padding: 0;
+}
+
+ul#contacts li {
+   margin: 10px 0;
+}
+
+table {
+   margin-bottom: 30px;
+   width: 100%
+}
+
+th {
+   width: 13%;
+}
+
+th.time {
+   width: 9%;
+}
+
+table * {
+   text-align: center;
+   line-height: 20px;
+}
+
+td, th {
+   background-color: #ddd;
+}
+
+td.otto {
+   background-color: #666;
+   color: white;
+}
+
 td.talk {
-   background-color: yellow;
+   background-color: #38d;
+   color: white;
 }
 
 td.spec {
-   background-color: green;
+   background-color: #E8573F;
+   color: white;
 }
 
 td.reg {
-   background-color: red;
+   background-color: #00928F;
+   color: white;
+}
+
+div#view {
+   padding: 10px;
+}
+
+div#view p {
+   margin: 10px 0;
+}
+
+div#view h3 {
+   margin: 20px 0;
 }

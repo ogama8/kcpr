@@ -3,55 +3,50 @@
 <head>
    <title>KCPR</title>
    <link rel="stylesheet" type="text/css" href="css/main.css">
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+   <script src="js/lib/angular/angular.js"></script>
+   <script src="js/lib/angular-route/angular-route.js"></script>
+   <script src="js/lib/underscore.js"></script> 
+   <script src="js/app.js"></script> 
+   <script src="js/controllers.js"></script> 
+
 </head>
 
 <body>
    <div id="content">
+   <div id="header-wrapper" ng-controller="HeaderCtrl">
 
-   <div id="logo"></div>
-
-   <audio controls>
-      <source src="http://129.65.35.106:8000/KCPRMP3" type='audio/mpeg'>
-      The stream only works with Chrome, Safari, and IE
-   </audio> 
-
-   <div id="header" ng-controller="HeaderCtrl">
-      <ul>
-         <li ng-class="{ active : $state.includes('news') }">
-            <a href="#/">News</a>
-         </li>
-         <li ng-class="{active : $state.includes('schedule') }">
-            <a href="#/schedule">Schedule</a>
-         </li>
-         <li ng-class="{active : $state.includes('join') }">
-            <a href="#/join">Join</a>
-         </li>
-         <li ng-class="{active : $state.includes('contact') }">
-            <a href="#/contact">Contact</a>
-         </li>
-         <li ng-class="{active : $state.includes('about') }">
-            <a href="#/about">About</a>
-         </li>
-      </ul>
+   <div id="logo">
+   </div>
+   <div id="audio-wrapper">
+      <audio id="stream">
+         <source src="http://129.65.35.106:8000/KCPRMP3" type='audio/mpeg'>
+      </audio> 
+      <i class="center fa fa-play" ng-hide="!a.paused" ng-click="a.play()">play</i>
+      <i class="center fa fa-pause" ng-hide="a.paused" ng-click="a.pause()">pause</i>
    </div>
 
-   <div ui-view></div>
+
+   <div id="header">
+      <a href="#/" ng-class="{ active : $location.path() == '/' }">News</a>
+      <a href="#/schedule" ng-class="{active : $location.path() == '/schedule' }">Schedule</a>
+      <a href="#/join" ng-class="{active : $location.path() == '/join' }">Join</a>
+      <a href="#/people" ng-class="{active : $location.path() == '/people' }">People</a>
+      <a href="#/about" ng-class="{active : $location.path() == '/about' }">About</a>
+      <a href="#/listen" ng-class="{active : $location.path() == '/listen' }">Listen</a>
+   </div>
+   </div>
+
+   <div ng-view ng-animate="'view'" id="view"></div>
 
    <div id="footer-help"></div>
    </div>
 
-
-
-
    <div id="footer">
-      <p>California Polytechnic State Univserity > College of Liberal Arts > Journalism Department > KCPR</p>
+      <a target="_blank" href="http://www.calpoly.edu">California Polytechnic State University</a> > <a target="_blank" href="http://cla.calpoly.edu">College of Liberal Arts</a> > <a target="_blank" href="http://journalism.calpoly.edu">Journalism Department</a> > <a href="/" class="active">KCPR</a>
    </div>
-
-   <script src="js/lib/angular/angular.js"></script>
-   <script src="js/lib/angular-ui-router/release/angular-ui-router.js"></script>
-   <script src="js/underscore.js"></script> 
-   <script src="js/app.js"></script> 
-   <script src="js/controllers.js"></script> 
 
 </body>
 </html>
