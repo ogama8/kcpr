@@ -21,11 +21,16 @@
    <div id="logo">
    </div>
    <div id="audio-wrapper">
-      <audio id="stream">
+      <audio id="stream" autoplay>
+         This stream only works with Chrome, Firefox, and Safari. 
          <source src="http://129.65.35.106:8000/KCPRMP3" type='audio/mpeg'>
       </audio> 
-      <i class="center fa fa-play" ng-hide="!a.paused" ng-click="a.play()">play</i>
-      <i class="center fa fa-pause" ng-hide="a.paused" ng-click="a.pause()">pause</i>
+      <button ng-show="(a.volume == 0)" ng-click="a.volume = 1" class="play-button center">
+         <i class="center fa fa-play"></i>&nbsp;&nbsp;play
+      </button>
+      <button ng-hide="(a.volume == 0)" ng-click="a.volume = 0" class="play-button center">
+         <i class="center fa fa-pause"></i>&nbsp;&nbsp;mute
+      </button>
    </div>
 
 
@@ -45,7 +50,7 @@
    </div>
 
    <div id="footer">
-      <a target="_blank" href="http://www.calpoly.edu">California Polytechnic State University</a> > <a target="_blank" href="http://cla.calpoly.edu">College of Liberal Arts</a> > <a target="_blank" href="http://journalism.calpoly.edu">Journalism Department</a> > <a href="/" class="active">KCPR</a>
+      <a target="_blank" href="http://www.calpoly.edu">California Polytechnic State University</a> <a target="_blank" href="http://cla.calpoly.edu">College of Liberal Arts</a> <a target="_blank" href="http://journalism.calpoly.edu">Journalism Department</a> <a href="/" class="active">KCPR</a>
    </div>
 
 </body>

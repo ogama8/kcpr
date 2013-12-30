@@ -1,6 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+
 * {
    margin: 0;
-   font-family: sans-serif;
+   font-family: 'Source Sans Pro', sans-serif;
 }
 
 html, body {
@@ -8,7 +11,7 @@ html, body {
 }
 
 body {
-   font-size: 75%;
+   font-size: 90%;
    line-height: 18px;
 }
 
@@ -26,18 +29,23 @@ a:hover {
    display: block;
 }
 
+.text-content {
+   width: 500px;
+   margin: 0 auto;
+}
+
 #content {
    min-height: 100%;
    height: auto !important;
    height: 100%;
    margin: 0 auto -30px;
-   width: 600px;
-   background-color: #eee;
+   width: 650px;
+   background-color: #f2f2f2;
 }
 
 #footer, #footer-help{
    min-height: 30px;
-   width: 600px;
+   width: 650px;
    margin: 0 auto;
    text-align: center;
 }
@@ -49,7 +57,7 @@ a:hover {
    background-position: center;
    
    height: 110px;
-   width: 600px;
+   width: 650px;
    margin: 0 auto;
 }
 
@@ -60,12 +68,7 @@ a:hover {
 
 }
 
-#play-button {
-   height: 10px;
-   width: 10px;
-   background-color: red;
-   margin: 0 auto;
-   display: block;
+.play-button {
 }
 
 #play-button.active {
@@ -112,12 +115,21 @@ ul#contacts {
 }
 
 ul#contacts li {
-   margin: 10px 0;
+   margin: 20px 0;
+}
+
+ul#contacts li p {
+
+   margin: 0;
 }
 
 table {
    margin-bottom: 30px;
    width: 100%
+}
+
+table h1 {
+   line-height: 30px;
 }
 
 th {
@@ -130,7 +142,6 @@ th.time {
 
 table * {
    text-align: center;
-   line-height: 20px;
 }
 
 td, th {

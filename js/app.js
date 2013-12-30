@@ -26,7 +26,8 @@ angular.module('kcpr-app', ['ngRoute', 'controllers'])
       templateUrl: 'partials/join.html'
    });
    $routeProvider.when("/people", {
-      templateUrl: 'partials/people.html'
+      templateUrl: 'partials/people.html',
+      controller: 'PeopleCtrl'
    });
    $routeProvider.when("/listen", {
       templateUrl: 'partials/listen.html'
