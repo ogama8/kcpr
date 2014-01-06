@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 
-
 * {
    margin: 0;
    font-family: 'Source Sans Pro', sans-serif;
@@ -52,7 +51,6 @@ a:hover {
 
 #logo {
    background-image: url('/assets/img/kcpr_final_logo_horiz_color_nobg.svg');
-   background-color: #666;
    background-repeat: no-repeat;
    background-position: center;
    
@@ -68,29 +66,23 @@ a:hover {
 
 }
 
-.play-button {
-}
-
-#play-button.active {
-   background-color: blue;
-}
-
-#header, #footer  {
+#header-wrapper, #footer  {
    background-color: #666;
-   color: #fff;
    text-align: center;
 }
 
-#header a {
-   margin: 0 20px;
+#header-wrapper h2 {
+   margin: 10px 0;
+   text-align: center;
+   color: white;
 }
 
-#header-wrapper {
-   border-radius: 1px;
+#header-wrapper a {
+   margin: 0 15px;
 }
 
 #footer a {
-   margin: 0 4px;
+   margin: 0 10px;
 }
 
 #header a, #footer a {
@@ -106,7 +98,6 @@ a:hover {
 
 #header a:hover, #footer a:hover {
    text-decoration: underline;
-
 }
 
 ul#contacts {
@@ -119,17 +110,12 @@ ul#contacts li {
 }
 
 ul#contacts li p {
-
    margin: 0;
 }
 
 table {
    margin-bottom: 30px;
    width: 100%
-}
-
-table h1 {
-   line-height: 30px;
 }
 
 th {
@@ -142,6 +128,11 @@ th.time {
 
 table * {
    text-align: center;
+}
+
+table.legend td {
+   line-height: 40px;
+   width: 25%;
 }
 
 td, th {

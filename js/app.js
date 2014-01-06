@@ -1,6 +1,6 @@
 var gdocs = 'https://spreadsheets.google.com/feeds/list/0Ao8Bu17C9mFydFUyWDJXaF9Dams2RFo2XzYxZ3lUTVE/od6/public/values?alt=json';
 
-angular.module('kcpr-app', ['ngRoute', 'controllers'])
+angular.module('kcpr-app', ['ngRoute', 'controllers', 'loadscript'])
 
 .config(function($routeProvider) {
 
