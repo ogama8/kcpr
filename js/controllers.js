@@ -41,7 +41,7 @@ angular.module('controllers', [])
       },
       {
          'title' : 'Music Directors',
-         'name' : 'Nick Cocores and Bobak Behesti',
+         'name' : 'Nick Cocores and Bobak Beheshti',
          'description' : 'Our Music Directors sort through new music each week to add into our rotation. They also host the New Releases show where brand new music is highlighted each week. If you are an artist or promoter looking to get your music on KCPR, contact the Music Directors. Please send physical copies to the address below.',
          'email' : 'kcpr@calpoly.edu'
       },

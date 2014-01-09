@@ -29,14 +29,14 @@
 
    <div id="middlebar">
    <loc>SAN LUIS OBISPO, CALIFORNIA</loc>
-      <button class="stream" ng-show="(a.volume == 0)" ng-click="a.volume = 1">
+      <playbutton ng-show="(a.volume == 0)" ng-click="a.volume = 1">
          stream&nbsp;&nbsp;&nbsp;
          <i class="fa fa-volume-off"></i>
-      </button>
-      <button class="stream on" ng-hide="(a.volume == 0)" ng-click="a.volume = 0">
-         stream&nbsp;&nbsp;&nbsp;
+      </playbutton>
+      <playbutton class="on" ng-hide="(a.volume == 0)" ng-click="a.volume = 0">
+         stream&nbsp;&nbsp;
          <i class="fa fa-volume-up"></i>
-      </button>
+      </playbutton>
    </div>
 
    <div id="header">
