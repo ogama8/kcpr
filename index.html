@@ -28,11 +28,13 @@
    </audio> 
 
    <span><h2 style="display:run-in">San Luis Obispo, California</h2>
-      <button style="display: block;" ng-show="(a.volume == 0)" ng-click="a.volume = 1">
+      <button class="stream center" style="display: block;" ng-show="(a.volume == 0)" ng-click="a.volume = 1">
+         stream
          <i class="fa fa-volume-off"></i>
       </button>
-      <button ng-hide="(a.volume == 0)" ng-click="a.volume = 0">
-          <i class="fa fa-volume-up"></i>
+      <button class="stream center on" ng-hide="(a.volume == 0)" ng-click="a.volume = 0">
+         stream
+         <i class="fa fa-volume-up"></i>
       </button>
    </span>
 
