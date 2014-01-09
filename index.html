@@ -14,28 +14,27 @@
    <script src="js/loadscript.js"></script> 
    <script src="js/controllers.js"></script> 
 
+
 </head>
 
 <body>
    <div id="content">
    <div id="header-wrapper" ng-controller="HeaderCtrl">
+   <div id="logo"></div>
 
-   <div id="logo">
-   </div>
-   <h2>San Luis Obispo, California</h2>
-   <div id="audio-wrapper">
-      <audio id="stream" autoplay>
-         This MP3 stream only works with HTML5-enabled browsers. 
-         <source src="http://129.65.35.106:8000/KCPRMP3" type='audio/mpeg'>
-      </audio> 
-      <button ng-show="(a.volume == 0)" ng-click="a.volume = 1" class="play-button center">
+   <audio id="stream" autoplay>
+      This MP3 stream only works with HTML5-enabled browsers. 
+      <source src="http://129.65.35.106:8000/KCPRMP3" type='audio/mpeg'>
+   </audio> 
+
+   <span><h2 style="display:run-in">San Luis Obispo, California</h2>
+      <button style="display: block;" ng-show="(a.volume == 0)" ng-click="a.volume = 1">
          <i class="fa fa-volume-off"></i>
       </button>
-      <button ng-hide="(a.volume == 0)" ng-click="a.volume = 0" class="play-button center">
+      <button ng-hide="(a.volume == 0)" ng-click="a.volume = 0">
           <i class="fa fa-volume-up"></i>
       </button>
-   </div>
-
+   </span>
 
    <div id="header">
       <a href="#/" ng-class="{ active : $location.path() == '/' }">News</a>
