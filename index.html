@@ -27,14 +27,17 @@
       <source src="http://129.65.35.106:8000/KCPRMP3" type='audio/mpeg'>
    </audio> 
 
-   <span><h2 style="display:run-in">SAN LUIS OBISPO, CALIFORNIA</h2>
-      <button style="display: block;" ng-show="(a.volume == 0)" ng-click="a.volume = 1">
+   <div id="middlebar">
+   <loc>SAN LUIS OBISPO, CALIFORNIA</loc>
+      <button class="stream" ng-show="(a.volume == 0)" ng-click="a.volume = 1">
+         stream&nbsp;&nbsp;&nbsp;
          <i class="fa fa-volume-off"></i>
       </button>
-      <button ng-hide="(a.volume == 0)" ng-click="a.volume = 0">
-          <i class="fa fa-volume-up"></i>
+      <button class="stream on" ng-hide="(a.volume == 0)" ng-click="a.volume = 0">
+         stream&nbsp;&nbsp;&nbsp;
+         <i class="fa fa-volume-up"></i>
       </button>
-   </span>
+   </div>
 
    <div id="header">
       <a href="#/" ng-class="{ active : $location.path() == '/' }">News</a>

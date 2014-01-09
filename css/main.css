@@ -63,16 +63,61 @@ a:hover {
    background-color: #888;
 }
 
+button.stream {
+   text-transform: uppercase;
+   color:#fff;
+   font-size: 110%;
+   width:100px;
+   background:#00928f;
+   border:none;
+   position: relative;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   border-radius: 2px;
+   -webkit-box-shadow: 0px 4px 0px #00625f;
+   -moz-box-shadow: 0px 4px 0px #00625f;
+   box-shadow: 0px 4px 0px #00625f;
+   -webkit-transition: all .1s ease;
+   -moz-transition: all .1s ease;
+   -ms-transition: all .1s ease;
+   -o-transition: all .1s ease;
+   transition: all .1s ease;
+}
+
+button.stream.on {
+   -webkit-box-shadow: 0px 2px 0px #00928f;
+   -moz-box-shadow: 0px 2px 0px #00928f;
+   box-shadow: 0px 2px 0px #00928f;
+   top: 3px;
+   transition: all .1s ease;
+   padding-right:1px;
+}
+
+button.stream:active {
+    -webkit-box-shadow: 0px 1px 0px rgba(219,31,5,1);
+    -moz-box-shadow: 0px 1px 0px rgba(219,31,5,1);
+    box-shadow: 0px 1px 0px rgba(219,31,5,1);
+    position: relative;
+    top: 3px;
+}
+
 #header-wrapper, #footer  {
    background-color: #888;
    text-align: center;
 }
 
-#header-wrapper h2 {
-   letter-spacing: 2px;
-   margin: 10px 0;
-   text-align: center;
+#middlebar {
+   margin: 15px 100px 20px;
+}
+
+loc {
+   text-align: left;
+   font-size:16pt;
    color: white;
+   letter-spacing: 2px;
+   float: right;
+   
+   margin:5px 0px;
 }
 
 #header {
