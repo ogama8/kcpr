@@ -68,8 +68,10 @@ a:hover {
 }
 
 playbutton {
+   cursor: pointer;
    padding: 3px 15px;
    text-transform: uppercase;
+   letter-spacing: 1px;
    color:#fff;
    font-size: 110%;
    width:110px;
