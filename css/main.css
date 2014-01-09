@@ -37,7 +37,7 @@ a:hover {
    min-height: 100%;
    height: auto !important;
    height: 100%;
-   margin: 0 auto -30px;
+   margin: 0 auto -36px;
    width: 650px;
    background-color: #f2f2f2;
 }
@@ -131,12 +131,12 @@ loc {
 #header a, #footer a {
    text-decoration: none;
    text-transform: uppercase;
+   text-align: center;
    letter-spacing: 2px;
    color: #fff;
    line-height: 30px;
    padding: 4px 8px;
    margin: 0 5px;
-
    border-radius: 5px;
 }
 
@@ -145,7 +145,6 @@ loc {
 }
 
 #header a.active, #footer a.active {
-   color: #E8573F;
    background-color: #777;
 }
 
