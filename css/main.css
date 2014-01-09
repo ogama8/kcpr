@@ -60,44 +60,48 @@ a:hover {
 }
 
 #audio-wrapper {
-
-   background-color: #666;
-   padding: 10px 0px;
-
+   background-color: #888;
 }
 
 #header-wrapper, #footer  {
-   background-color: #666;
+   background-color: #888;
    text-align: center;
 }
 
 #header-wrapper h2 {
+   letter-spacing: 2px;
    margin: 10px 0;
    text-align: center;
    color: white;
 }
 
-#header-wrapper a {
-   margin: 0 15px;
+#header {
+   padding-bottom: 3px;
 }
 
-#footer a {
-   margin: 0 10px;
+#footer {
+   padding: 3px 0px;
 }
 
 #header a, #footer a {
    text-decoration: none;
-   text-transform: lowercase;
+   text-transform: uppercase;
+   letter-spacing: 2px;
    color: #fff;
    line-height: 30px;
+   padding: 4px 8px;
+   margin: 0 5px;
+
+   border-radius: 5px;
+}
+
+#header a:hover, #footer a:hover {
+   background-color: #777;
 }
 
 #header a.active, #footer a.active {
    color: #E8573F;
-}
-
-#header a:hover, #footer a:hover {
-   text-decoration: underline;
+   background-color: #777;
 }
 
 ul#contacts {
@@ -140,7 +144,7 @@ td, th {
 }
 
 td.otto {
-   background-color: #666;
+   background-color: #888;
    color: white;
 }
 
