@@ -37,6 +37,16 @@ a:hover {
    margin: 0 auto;
 }
 
+.important-news {
+   text-align: center;
+   background-color: #ccc;
+   margin: 20px;
+   padding: 20px;
+   border: none;
+   box-shadow: 3px 5px 5px  #666;
+
+}
+
 #content {
    min-height: 100%;
    height: auto !important;
