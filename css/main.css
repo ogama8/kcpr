@@ -39,9 +39,10 @@ a:hover {
 
 .important-news {
    text-align: center;
-   background-color: #ccc;
+   background-color: #E8573F;
+   color: #fff;
+   padding: 10px;
    margin: 20px;
-   padding: 20px;
    border: none;
    box-shadow: 3px 5px 5px  #666;
 
