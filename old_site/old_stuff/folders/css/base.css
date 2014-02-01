@@ -1,0 +1,309 @@
+html, body {
+   margin: 0;
+   padding: 0;
+   font-family: "FolksRegular", sans-serif;
+   line-height: 1.2em;
+}
+
+h5, h4, h3, h2, h1 {
+   font-family: "BlackoutMidnight", sans-serif;
+   color: #4a4a4d;
+   /* color: #483C32; */
+}
+
+.newstitle {
+   color: #4a4a4d;
+}
+
+body {
+   text-align: center;
+   color: #5a5b5e;
+   background-color: #EEEAE1;
+   background-color: #272727;
+
+   /* prevents huge navigation bar from creating horizontal scrollbar */
+   overflow-x: hidden; 
+
+   /* background-image:url('http://placekitten.com/1500/1000'); */
+   background-repeat: repeat-x;
+}
+
+ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+img {
+   border-style: none;
+}
+
+
+p {
+   margin: 8px, 0px;
+   padding: 0;
+}
+
+a {
+   color: blue;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+a:visited {
+   color: #8305d3 /* PURPLE */
+}
+
+a:hover {
+   text-decoration: underline;
+   color: green;
+}
+
+/**
+ * apply to a div to clear floats above it.
+ */
+.clearer {
+   clear: both;
+   height: 0;
+   padding: 0;
+   margin: 0;
+   line-height: 0;
+   font-size: 0;
+}
+
+.rotate {
+   /** use css3please.com to generate rotating code */
+   -moz-transform: rotate(-10deg);  /* FF3.5+ */
+   -o-transform: rotate(-10deg);  /* Opera 10.5 */
+   -webkit-transform: rotate(-10deg);  /* Saf3.1+, Chrome */
+   /*
+   -ms-transform: rotate(-10deg);  /* IE9 */
+   /*
+   transform: rotate(-10deg);  
+   filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */ 
+   /*
+   M11=0.984807753012208, M12=0.17364817766693033, M21=-0.17364817766693033, M22=0.984807753012208, sizingMethod='auto expand');
+   zoom: 1;
+   */
+}
+
+/**
+ * TOP OF SITE HEADER STUFF
+ */
+
+#header {
+   width: 980px;
+   margin: auto;
+}
+
+#topPicture {
+   background-color: #EEEAE1;
+   position: absolute;
+   display: none;
+
+   z-index: -2;
+   top: -50px;
+   width: 100%;
+   height: 380px;
+}
+
+#topBlock {
+   background-color: red;
+   position: absolute;
+   display: none;
+
+   z-index: -1;
+   top: 236px;
+   left: -50px;
+   width: 120%;
+   height: 340px;
+}
+
+#bottomBlock {
+   background-color: red;
+   position: absolute;
+   display: none;
+
+   z-index: -1;
+   top: 236px;
+   left: -50px;
+   width: 120%;
+   height: 340px;
+}
+
+#picture {
+   margin-top: 15px;
+}
+
+#header h1 {
+   color: #FDD017; /*Gold*/
+   top: 100px;
+   margin: 0;
+   padding: 0;
+   font-size: 4em;
+   display: block;
+   text-align: center;
+}
+
+#navigation {
+   background-color: #707070;
+   background-color: #484B9F;
+
+   padding: 0;
+   margin-left: -10px;
+   margin-top: -50px;
+   
+   width: 190%;
+   margin-left: -450px;
+
+   -moz-border-radius:34px;
+   -webkit-border-radius:34px;
+   border-radius:34px;
+
+   text-align: center;
+}
+
+.headerList {
+   height: 15px;
+   display: inline-block;
+   width: 980px;
+}
+
+.headerList li {
+   list-style-type: none;
+   float: left;
+
+   /* Change width percentage if adding more links */
+   min-width: 19%;
+}
+
+.headerList a {
+   font-family: "BlackoutMidnight", sans-serif;
+   font-size: 1.5em;
+
+   line-height: 19px;
+
+   color: white;
+   /*
+   -webkit-border-top-left-radius: 5px; 
+   -webkit-border-top-right-radius: 5px; 
+   -moz-border-radius-topleft: 5px; 
+   -moz-border-radius-topright: 5px; 
+   */
+
+   margin: 0;
+} 
+
+.headerList a:hover {
+   text-decoration: none;
+   font-size: 200%;
+}
+
+.headerList a.active {
+   text-decoration: none;
+   font-size: 200%;
+}
+
+.bold {
+   font-weight: bold;
+}
+
+/**
+ * SITE LAYOUT
+ */
+
+#headerContainer {
+   margin: 0px auto;
+   text-align: left;
+   padding: 0px 20px;
+}
+
+#contentContainer {
+   width: 980px;
+   margin: 0px auto;
+   margin-top: 50px;
+   padding: 0px 20px;
+   text-align: left;
+}
+
+#mainContainer {
+   float: left;
+   margin: 20px 0px 20px 0px;
+   width: 650px;
+
+
+   background-color: white;
+   padding: 15px 15px;
+
+   -moz-border-radius:34px;
+   -webkit-border-radius:34px;
+   border-radius:34px;
+   /*IE DOES NOT SUPPORT BORDER RADIUS*/
+   -moz-box-shadow:0px 0px 11px #000000;
+   -webkit-box-shadow:0px 0px 11px #000000;
+   box-shadow:0px 0px 11px #000000;
+   /*IE DOES NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+   opacity:0.86; /* O.O. was 0.76 */
+   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=86);
+   /*-ms-filter must come before filter*/
+   filter: alpha(opacity=86);
+   /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+   /*All filters must be placed together*/
+}
+
+#mainContainer.fullWidth {
+   width: 950px;
+   margin-top: 0;
+}
+
+#mainContainer hr {
+   color: #E4E4BD;
+   width: 80%;
+   border: 1px solid;
+}
+
+#sidebarContainer hr {
+   color: white;
+}
+
+#sidebarContainer {
+   float: left;
+   margin-top: 75px;
+   margin-right: 20px;
+   /*background-color: #E4E4BD;*/
+}
+
+.sidebar {
+   -moz-border-radius: 5px;
+   padding: 10px 10px;
+   margin-bottom: 20px;
+   width: 260px;
+   background-color: white;
+
+   -moz-border-radius:34px;
+   -webkit-border-radius:34px;
+   border-radius:34px;
+   /*IE DOES NOT SUPPORT BORDER RADIUS*/
+   -moz-box-shadow:0px 0px 11px #000000;
+   -webkit-box-shadow:0px 0px 11px #000000;
+   box-shadow:0px 0px 11px #000000;
+   /*IE DOES NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+   opacity:0.86;
+   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=86);
+   /*-ms-filter must come before filter*/
+   filter: alpha(opacity=86);
+   /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+   /*All filters must be placed together*/
+}
+
+.sidebar h2, .sidebar h3 {
+   margin-top: 0;
+   text-align: center;
+}
+
+#footerContainer {
+   margin: 1em;
+}
+
+.tiny {
+   font-size: 85%;
+}

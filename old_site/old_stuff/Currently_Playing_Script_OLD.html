@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+  <script language="JavaScript">
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+///// Use this script to display the day, time and what's currently playing on the air//////
+
+/////////////////////place this script in the <head> of html page//////////////////////////
+
+///////////////////be sure to grab the script ... and /script parts///////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//////Get date
+
+
+
+Stamp = new Date();
+
+var myDays= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+
+thisDay=Stamp.getUTCDay();  
+
+
+
+////////////Get time
+
+var Hours;
+
+var Mins;
+
+var Time;
+
+var Hourshow;
+
+Hours = Stamp.getUTCHours();
+
+
+
+if(Hours <= 7){       //make sure it says the correct day
+
+ if(thisDay == 0){
+
+ thisDay = 6;
+
+ }
+
+ else{
+
+ thisDay=thisDay-1;
+
+ }
+
+ Hours=Hours+24-7;
+
+}
+
+else{
+
+ Hours=Hours-8; //need to subtract 8 for PST... change to 7 for daylight savings
+
+}
+
+
+
+thatDay=myDays[thisDay];  
+
+Hourshow=Hours;     //index for schedule array
+
+
+
+if (Hours >= 12) {	//for displaying time in non-military format
+
+ Time = " pm";
+
+}
+
+else {
+
+ Time = " am";
+
+}
+
+
+
+if (Hours > 12) {
+
+ Hours = Hours-12;
+
+}
+
+
+
+if (Hours == 0) {
+
+ Hours = 12;
+
+}
+
+
+
+Mins = Stamp.getUTCMinutes();
+
+
+
+if (Mins < 10) {
+
+ Mins = "0" + Mins;
+
+}
+
+
+
+document.write('<font face="Helvetica, Arial, sans-serif" color=#666666><small><small>It is ' + thatDay);
+
+document.write(' at ' + Hours + ":" + Mins + Time + ' in San Luis Obispo, CA </font></small></small>');
+
+
+
+///////Get show 
+
+//these 24-item arrays hold show schedule titles from midnight-11pm per day
+
+//UPDATE THESE AT THE BEGINNING OF THE QUARTER
+
+
+
+var sunShows=["Luke","Nick","Nick","Nick","Chris J.","Chris J.","Chris J.","Matthew S.","Matthew S.","Matthew S.","Weird America","Sasquatch!","Sasquatch!","Charlie in the Trees","Charlie in the Trees","Drew &amp; Brew","Cute, Single &amp; Twee","Bandwagon","KCPR Sessions","Burnt Dog Rodeo","In The Light","Stargazers' Gallery","Audioscapes","Audioscapes"];
+var monShows=["Audioscapes","Amber","Amber","Amber","Cody","Cody","Cody","MAXIMUM ROCK AND ROLL!","Wookie","Democracy Now!","New Releases","New Releases","Jeremy &amp; Jessica","Ryan","Ryan","Jeremiah","Jeremiah","Table Manners","Family Show","Family Show","This Ain't No Disco","Dave &amp; Jefferson","Dave &amp; Jefferson","Lindsey"];
+var tueShows=["Lindsey","Nicolette","Nicolette","Nicolette","Chris P.","Chris P.","Chris P.","Jack","Jack","Democracy Now!","Michele","Graham","Graham","Noah","Noah","Joelle","Neven","Les Rendez Vous","Arigato Tokyo ","Beau","Worship Glitch","Dance Attack 5000","Dance Attack 5000","White Noise"];
+var wedShows=["White Noise","James","James","James","Jennifer","Jennifer","Jennifer","Democracy Now!","Press Start","Musica Americana","Susan","Susan","Jen","Lunch With Bob","DJ Christ and the Psychelic Gospel","DJ Christ and the Psychelic Gospel","Rasta Revolution","Rasta Revolution","Punk is Dead","Punk is Dead","New Noise Manifesto","Slaytanic Carnage"];
+var thuShows=["Slaytanic Carnage","Dylan","Dylan","Dylan","Stephanie","Stephanie","Stephanie","Megan","Megan","Democracy Now!","Brooke","Katrina","Allison","Meghann","Meghann","Max","Otto","Juan","Mix Tape","Burnt Dog Blues Lounge","Miles Ahead","Miles Ahead","Urban Landscapes","Urban Landscapes"];
+var friShows=["Rob","Andrew","Andrew","Andrew","Matt Z.","Matt Z.","Matt Z.","Otto","Otto","Democracy Now!","Olga","Olga","Diego","Diego","Andrew L.","Andrew L.","Counterweight","Global Grooves","I Smell Funk","I Smell Funk","Fudgepack","Mike K.","Mike K."];
+var satShows=["Mike K.","Lucas","Lucas","Lucas","Richard","Richard","Richard","Sarah G.","Sarah G.","Sasquatch!","Met Opera","Met Opera","Met Opera","Met Opera","Cristina","Less Than 5 Minutes is B.S.","Electronic Immersion","Electronic Immersion","Cassette Decks and Rainbows","Club 91","Club 91","Chris P.","Chris P.","Luke"];
+
+var Show;
+
+
+
+if (thisDay==0){	///display the show for the right day
+
+ Show = sunShows[Hourshow];
+
+}
+
+
+
+if (thisDay==1){
+
+ Show = monShows[Hourshow];
+
+}
+
+
+
+if (thisDay==2){
+
+ Show = tueShows[Hourshow];
+
+}
+
+
+
+if (thisDay==3){
+
+ Show = wedShows[Hourshow];
+
+}
+
+
+
+if (thisDay==4){
+
+ Show = thuShows[Hourshow];
+
+}
+
+
+
+if (thisDay==5){
+
+ Show = friShows[Hourshow];
+
+}
+
+
+
+if (thisDay==6){
+
+ Show = satShows[Hourshow];
+
+}
+
+
+
+///UNCOMMENT THIS WHEN SCHEDULE UPDATED
+
+document.write('<br><font face="Helvetica, Arial, sans-serif" color=#999999><small><small>' + '  Currently on the air:  <a href="music/schedule.html"><font color=#ff0000><b>' + Show + '</a></b></small></small></font>');
+
+
+
+//COMMENT THIS WHEN SCHEDULE UPDATED
+
+//document.write('<br><font face="Helvetica, Arial, sans-serif" color=#666666><small><a href="music/live.html" class="style1">Listen online</a></small></font><br>');
+
+///////////////////// End of script ////////////////////////////////////////////////////////////////////
+
+
+
+ </script>
+
+</body>
+</html>

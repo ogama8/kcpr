@@ -1,0 +1,57 @@
+#schedule {
+   /*border-spacing: 3px;*/
+   border-spacing: 3.5px;
+   empty-cells: hide;
+   
+}
+#schedule td {
+   border: solid 1px;
+}
+
+#schedule td.show {
+   text-align: center;
+   font-size: 80%;
+
+   -moz-border-radius:10px;
+   -webkit-border-radius:10px;
+   border-radius:10px;
+   /*IE DOES NOT SUPPORT BORDER RADIUS*/
+}
+
+#schedule td.time {
+   font-weight: bold;
+   font-size: 60%;
+   text-align: center;
+}
+
+.type0 {
+   background-color: #e0e0e0;
+}
+
+.type1 {
+   background-color: #afffaf;
+}
+
+.type2 {
+   background-color: #f8ffbf;
+}
+
+.type3 {
+   background-color: white;
+}
+
+#schedule td.show:hover {
+   /* hmmm what to do here... */
+}
+
+.box {
+   width: 10px;
+   height: 10px;
+   border: solid 1px;
+   display: inline-block;
+}
+
+ul.showcolors {
+   list-style: none;
+}
+

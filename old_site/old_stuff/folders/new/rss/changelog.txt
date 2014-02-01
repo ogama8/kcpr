@@ -1,0 +1,23 @@
+CHANGELOG - rss2php
+
+  Version 0.2
+---------------
+Released 17/11/04
+
+- This release is mainly bug fixes, but I bumped it up to version 0.2 as this
+  is what rss-homepage (a complete suite to output an aesthetic home page very
+  easily with multiple feeds) will probably be based on.
+- Cleaned up the file structure (all files are in one folder)
+- Added acknowledgment of portions of the code in release notes
+- Renamed the output page to example.php
+- Added references to rss-homepage in example file
+- Updated some config files (very minor fixes)
+
+
+  Version 0.1
+---------------
+Released 15/11/04
+
+- First release, containing rss.php - parser file, defaultconfig.php - a default
+  config file, slashdot.php - slashdot config, Slashdot and BBC caches,
+  index.php - an example output page, and update.sh - a simple update script.

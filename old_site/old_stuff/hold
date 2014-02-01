@@ -1,0 +1,46 @@
+<!DOC TYPE HTML PUBLIC "-//w3c// HTML 4.0 Final//EN">
+<HTML> 
+<HEAD>
+<TITLE>KCPR 91.3 FM, San Luis Obispo</TITLE>
+<META NAME="copyright" CONTENT="1999, KCPR 91.3fm, San Luis Obispo">
+<META NAME="keywords" CONTENT="KCPR, 91.3, San Luis Obispo, Cal Poly, radio, music,
+	playlist, college, station"> 
+<META NAME="description" CONTENT="Main page for KCPR 91.3fm, San Luis Obispo">
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0000FF" ALINK="#FF0000" VLINK="#0000FF">
+
+	<!-- Begin Index contents -->
+
+	<CENTER><A HREF="kcpr.MAP" BORDER="0"><IMG SRC="kcpr.gif" USEMAP="#kcpr" BORDER="0" ISMAP></A></CENTER>
+
+	<!-- End Index contents -->
+
+	<CENTER><FONT FACE="ARIAL"><A HREF="music/music.html">the music</A></FONT> | 
+			<FONT FACE="ARIAL"><A HREF="people/people.html">the people</A></FONT> | 
+			<FONT FACE="ARIAL"><A HREF="station/station.html">the station</A></FONT> | 
+			<FONT FACE="ARIAL"><A HREF="music/live.html">go live!</A></FONT>
+	</CENTER>
+
+	<BR><HR WIDTH="75%">
+<CENTER> Web Space Provided by     <BR>
+        <A HREF="http://www.fix.net">
+           <IMG SRC="fixnet.jpg" ALT="Fix Net!">
+        </A>
+</CENTER>
+	<BR><HR WIDTH="75%">
+	<FONT FACE="Arial,Helvetica" SIZE=-2>Comments? Direct them to the  
+	<A HREF="mailto:webmaster@kcpr.org">Webmaster</A>.</FONT><BR>
+	<FONT FACE="ARIAL" SIZE=-2>KCPR Website developed by Julie Larsen; maintained by 
+	 Julie Larsen</FONT><BR>
+	<FONT FACE="ARIAL" SIZE=-2>Copyright &copy; 1999, KCPR 91.3fm, San Luis Obispo</FONT>
+
+	<MAP name="kcpr">
+	<AREA SHAPE="rect" alt="Hear KCPR live!" COORDS="339,211,395,235" HREF="music/live.html" 	TITLE="Hear KCPR live!">
+	<AREA SHAPE="poly" alt="the station" COORDS="261,283,234,341,339,340,349,311,309,313,307,292,260,283" HREF="station/station.html" TITLE="the station">
+	<AREA SHAPE="poly" COORDS="147,296,120,326,110,351,223,351,224,324,188,302,146,297" 	HREF="people/people.html" TITLE="">
+	<AREA SHAPE="poly" COORDS="58,254,31,309,126,306,131,279,111,276,102,258,59,256,57,254" 	HREF="music/music.html" TITLE="">
+	<AREA SHAPE="default" NOHREF>
+	</MAP>
+</BODY>
+</HTML>

@@ -1,0 +1,65 @@
+/**
+ * Similar to the header list, presenting the tab list
+ */
+.tabList {
+   padding: 0 0 0 5px;
+   margin: 0;
+   height: 24px;
+   list-style-type: none;
+}
+
+.tabList li {
+   float: left;
+   height: 24px;
+   line-height: 24px;
+   padding: 0 5px 0 0;
+   margin: 0;
+   text-align: center;
+   display: block;
+}
+
+.tabList a, .tabList a:visited {
+   display: block;
+   height: 24px;
+   line-height: 24px;
+   margin: 0 5px;
+   padding: 0 6px;
+
+   background-color: #ddeecc;
+   color: #5a5b5e; /* regular gray text */ 
+   text-decoration: none;
+
+   -webkit-border-top-left-radius: 5px; 
+   -webkit-border-top-right-radius: 5px; 
+   -moz-border-radius-topleft: 5px; 
+   -moz-border-radius-topright: 5px; 
+
+   border-bottom: none;
+}
+
+/* Hovering over non selected tab */
+.tabList a:hover {
+   background-color: #828CCC;
+   color: white;
+   cursor: pointer;
+}
+
+/* The selected tab */
+.tabList a.active, .tabList a.active:hover, .tabList a.active:visited {
+   color: white;
+   background-color: #484B9F;
+   text-decoration: none;
+}
+
+#tabBar {
+   display: block;
+   width: 100%;
+   height: 6px;
+   margin: 0;
+   padding: 0;
+   -webkit-border-top-left-radius: 5px; 
+   -webkit-border-top-right-radius: 5px; 
+   -moz-border-radius-topleft: 5px; 
+   -moz-border-radius-topright: 5px; 
+   background-color: #484B9F;
+}

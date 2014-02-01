@@ -1,0 +1,184 @@
+html, body {
+   margin: 0;
+   padding: 0;
+   font-family: "Arial", "Trebuchet MS", "Bitstream Vera Sans", sans-serif;
+   font-size: 12pt;
+   line-height: 1.2em;
+}
+
+h4 {
+   color: #483C32;
+}
+
+h2 {
+   color: #483C32;
+}
+
+table {
+   border-collapse: collapse;
+}
+
+
+body {
+   text-align: center;
+   background-color: white;
+   color: #5a5b5e;
+}
+
+p {
+   margin: 8px, 0px;
+   padding: 0;
+}
+
+a {
+   color: blue;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+a:visited {
+   color: #8305d3 /* PURPLE */
+}
+
+a:hover {
+   text-decoration: underline;
+   color: green;
+}
+
+
+/**
+ * apply to a div to clear floats above it.
+ */
+.clearer {
+   clear: both;
+   height: 0;
+   padding: 0;
+   margin: 0;
+   line-height: 0;
+   font-size: 0;
+}
+
+/**
+ * TOP OF SITE HEADER STUFF
+ */
+
+#header {
+   background-color: black;
+   width: 100%;
+}
+
+#header h1 {
+   color: #FDD017; /*Gold*/
+   float: left;
+   margin: 0;
+   padding: 0;
+   font-size: 4em;
+   position: absolute;
+}
+
+.tabList {
+   float: right;
+   padding: 0;
+   margin: 0;
+}
+
+.tabList li {
+   float: left;
+   list-style-type: none;
+   margin: 5px;
+   padding: 0;
+   font-size: 14px;
+   text-align: center;
+}
+
+.tabList li.gap {
+   /*padding-right: 2em;*/
+}
+
+.tabList a {
+   display: block;
+   padding: 0px 10px;
+   color: white;
+} 
+
+
+.tabList a:hover {
+   /*background-color: #febc3e;*/
+   color: #FDD017;
+   text-decoration: none;
+}
+
+.tabList a.active .tabList a.active:hover {
+   color: white;
+   background-color: #fb7d1c;
+}
+
+
+/**
+ * SITE LAYOUT
+ */
+
+#headerContainer {
+   padding-top: 50px;
+   width: 980px;
+   margin: 0px auto;
+   text-align: left;
+}
+
+#contentContainer {
+   width: 980px;
+   margin: 0px auto;
+   text-align: left;
+   -moz-border-radius: 20px;
+   -moz-border-radius-topleft: 0px;
+   -moz-border-radius-topright: 0px;
+}
+
+#mainContainer {
+   float: left;
+   margin: 20px 0px 20px 30px;
+   width: 560px;
+   -moz-border-radius: 10px;
+}
+
+#mainContainer hr {
+   color: #E4E4BD;
+}
+
+#sidebarContainer {
+   float: right;
+   margin-top: 20px;
+   /*background-color: #E4E4BD;*/
+}
+
+#sidebarContainer hr {
+   color: white;
+}
+
+.sidebar {
+   border: solid;
+   border-color: #E4E4BD;
+   padding: 10px 10px;
+   width: 320px;
+   background-color: white;
+   -moz-border-radius: 5px;
+}
+
+#footerContainer {
+   font-size: 65%;
+   margin: 1em;
+}
+
+
+/*
+.main {
+   padding: 1em;
+   margin: 2em;
+   background-color: white;
+}
+
+.sidebar {
+   padding: 1em;
+   margin: 2em;
+   background-color: white;
+}

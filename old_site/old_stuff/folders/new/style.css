@@ -1,0 +1,7 @@
+body {background-color:ffffe0ff}
+h1 {text-align:center}
+#colleft {float: left; width: 200px; background-color:CCFFB3;height:100%;padding:10px }
+#colright {float:right;width:200px;text-align:right;background-color:CCFFB3;height:100%}
+#colcenter {float:center; margin-left:225px;margin-right:225px}
+header {background-color:CCFFB3;padding:10px}
+

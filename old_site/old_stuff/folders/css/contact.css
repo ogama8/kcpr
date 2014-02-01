@@ -1,0 +1,12 @@
+.job {
+   font-weight: bold;
+}
+
+.phone {
+   list-style-type: disc; 
+   margin-left: 1em;
+}
+
+.phone li {
+   margin-bottom: 1em
+}

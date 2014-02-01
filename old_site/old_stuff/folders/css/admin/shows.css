@@ -1,0 +1,18 @@
+.deleteShow {
+   cursor: pointer;
+}
+
+.description {
+   width: 100%;
+}
+
+.tabList {
+   float: left;
+   cursor: pointer;
+}
+
+#toolbar {
+   float: left;
+   margin-top: -.5em;
+   margin-left: 1em;
+}

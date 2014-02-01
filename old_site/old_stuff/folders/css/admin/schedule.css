@@ -1,0 +1,47 @@
+#timeField {
+   width: 80px;
+}
+
+#schedule {
+   border-collapse: collapse;
+   table-layout: fixed;
+}
+
+#schedule td {
+   position: relative;
+   border: 1px solid green;
+   text-align: left;
+   white-space: nowrap;
+
+   min-width: 80px;
+}
+
+#schedule td select {
+   width: 150px;
+}
+
+#schedule td.delLink {
+   border: none;
+}
+
+#schedule td.time {
+   border: none;
+   font-weight: bold;
+   text-align: center;
+}
+
+.type0 {
+   background-color: #c0c0c0;
+}
+
+.type1 {
+   background-color: #6dff7e;
+}
+
+.type2 {
+   background-color: #f7ff9e;
+}
+
+.del {
+   cursor: pointer;
+}

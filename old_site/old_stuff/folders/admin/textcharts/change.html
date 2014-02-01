@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript" src="checkDate.js"></script>
+<body>
+
+<p>Enter date of charts you want to change (mm/dd/yy):</p>
+<form name="date" method="post" action="create.php?overwrite=1" onSubmit="return checkDate(this)">
+<input type="text" size="2" name="month">
+<input type="text" size="2" name="day">
+<input type="text" size="2" name="year">
+<br />
+<input type="Submit" value="Submit">
+
+</form>
+
+</body>
+</html>

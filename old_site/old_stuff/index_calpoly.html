@@ -1,0 +1,1161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+                 
+  <meta name="keywords"
+ content="kcpr, cal poly radio, san luis obispo, college radio, burnt dog, california polytechnic state university, liberal arts, broadcast, central coast, music">
+                 
+  <meta name="description"
+ content="KCPR 91.3f.m., Cal Poly Radio, San Luis Obispo">
+                 
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=windows-1252">
+  <title>Welcome to KCPR 91.3fm, San Luis Obispo</title>
+                              
+  <style type="text/css">
+
+<!--
+
+a {  font-family: Arial, Helvetica, sans-serif; text-decoration: none; color: #CCCCCC}
+
+.small {  font-family: Arial, Helvetica, sans-serif; font-size: 9px; color: #999999}
+
+.normaltext {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #666666}
+
+.style1 {color: #ff3300}
+
+.style3 {
+
+	color: #666666;
+
+	font-weight: bold;
+
+}
+
+.style4 {color: #FF3300}
+.style5 {	color: #DD1522;
+	font-weight: bold;
+}
+
+-->
+
+  </style> 
+               
+  <script language="JavaScript">
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+///// Use this script to display the day, time and what's currently playing on the air//////
+
+/////////////////////place this script in the <head> of html page//////////////////////////
+
+///////////////////be sure to grab the script ... and /script parts///////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//////Get date
+
+
+
+Stamp = new Date();
+
+var myDays= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+
+thisDay=Stamp.getUTCDay();  
+
+
+
+////////////Get time
+
+var Hours;
+
+var Mins;
+
+var Time;
+
+var Hourshow;
+
+Hours = Stamp.getUTCHours();
+
+
+
+if(Hours <= 7){       //make sure it says the correct day
+
+ if(thisDay == 0){
+
+ thisDay = 6;
+
+ }
+
+ else{
+
+ thisDay=thisDay-1;
+
+ }
+
+ Hours=Hours+24-7;
+
+}
+
+else{
+
+ Hours=Hours-7; //need to subtract 8 for PST... change to 7 for daylight savings
+
+}
+
+
+
+thatDay=myDays[thisDay];  
+
+Hourshow=Hours;     //index for schedule array
+
+
+
+if (Hours >= 12) {	//for displaying time in non-military format
+
+ Time = " pm";
+
+}
+
+else {
+
+ Time = " am";
+
+}
+
+
+
+if (Hours > 12) {
+
+ Hours = Hours-12;
+
+}
+
+
+
+if (Hours == 0) {
+
+ Hours = 12;
+
+}
+
+
+
+Mins = Stamp.getUTCMinutes();
+
+
+
+if (Mins < 10) {
+
+ Mins = "0" + Mins;
+
+}
+
+
+
+document.write('<font face="Helvetica, Arial, sans-serif" color=#666666><small><small>It is ' + thatDay);
+
+document.write(' at ' + Hours + ":" + Mins + Time + ' in San Luis Obispo, CA </font></small></small>');
+
+
+
+///////Get show 
+
+//these 24-item arrays hold show schedule titles from midnight-11pm per day
+
+//UPDATE THESE AT THE BEGINNING OF THE QUARTER
+
+
+
+var sunShows=["Otto DeeJay","Otto DeeJay","Otto DeeJay","Otto DeeJay","Otto DeeJay","Otto DeeJay","Otto DeeJay","Otto DeeJay","Otto DeeJay","Otto DeeJay","EJay","EJay","Afternoon Tea","Will D.","Will D.","Jen F.","Jen F.","Bandwagon","Burnt Dog Rodeo","Better B4","Emily K.","Stargazers' Gallery","Audioscapes","Audioscapes"];
+var monShows=["Audioscapes","Jessie","Jessie","Jessie","Otto DeeJay","Otto DeeJay","Otto DeeJay","Maximum Rock and Roll ","Wookie ","Democracy Now ","Tyler","Tyler","New Releases","New Releases ","Training Wheels","Patty","Patty","Table Manners","Family Show","Family Show","Chris M.",,"This Aint No Disco","Escape From Noise","Pip! Goon!"];
+var tueShows=["Pip! Goon!","Alex C.","Alex C.","Alex C.","Otto DeeJay","Otto DeeJay","Otto DeeJay","Nick","Nick","Democracy Now ","DJ Magellan","DJ Magellan","Kinfolk","Christina","Bryan N.","Elijah","Elijah","B & B Airwaves","Arigato Tokyo ","Anything Under 5 min. is BS","Anything Under 5 min. is BS","Soul Patrol","Soul Patrol","New Noise Manifesto"];
+var wedShows=["New Noise Manifesto","Scott","Scott","Scott","Whitney","Whitney","Whitney","Betty","Brian N.","Democracy Now","Those Two Jews / Press Start","Meagan","Foote Foote","Foote Foote","Screen Scene","Tyler","Rosa","Annie G.","Rasta Revolution","Rasta Revolution","Punk is Dead","Punk is Dead","Punk is Dead","Slaytanic Carnage!"];
+var thuShows=["Slaytanic Carnage!","Katy","Katy","Katy","Jeremy","Jeremy","Jeremy","Sally","Sally","Democracy Now","Stacey","Stacey","Steve","Steve","Ian","Ian","Snakebites","Snakebites","Lyrical Origami","Burnt Dog Blues","Miles Ahead","Miles Ahead","Teeth and Fur","Teeth and Fur"];
+var friShows=["Ryan","Garret","Garret","Garret","Monti","Monti","Monti","Ryan","Ryan","Democracy Now","Victoria","Victoria","Jason M.","Jason M.","Pip","David D.","Kate","Kate","The Fuzz","Global Grooves","Fudge Pack","Urban Landscapes","Urban Landscapges","Beat Down"];
+var satShows=["Beat Down","Aaron","Aaron","Aaron","Otto","Otto","Otto","James K","DJ Christ & The Crimson Aura","DJ Christ & The Crimson Aura","Regular Format","Regular Format","Regular Format","Regular Format","Matt Valentine","Matt Valentine","Charlie In Trees","Charlie In Trees","Sessions","Kimi","Andy","Red Hot Funky Fresh Electro Clash Dance Party","Club 91","Club 91"];
+
+
+var Show;
+
+
+
+if (thisDay==0){	///display the show for the right day
+
+ Show = sunShows[Hourshow];
+
+}
+
+
+
+if (thisDay==1){
+
+ Show = monShows[Hourshow];
+
+}
+
+
+
+if (thisDay==2){
+
+ Show = tueShows[Hourshow];
+
+}
+
+
+
+if (thisDay==3){
+
+ Show = wedShows[Hourshow];
+
+}
+
+
+
+if (thisDay==4){
+
+ Show = thuShows[Hourshow];
+
+}
+
+
+
+if (thisDay==5){
+
+ Show = friShows[Hourshow];
+
+}
+
+
+
+if (thisDay==6){
+
+ Show = satShows[Hourshow];
+
+}
+
+
+
+///UNCOMMENT THIS WHEN SCHEDULE UPDATED
+
+//document.write('<br><font face="Helvetica, Arial, sans-serif" color=#999999><small><small>' + '  Currently on the air:  <a href="http://kcpr.calpoly.edu/music/schedule.html"><font color=#ff0000><b>' + Show + '</a></b></small></small></font>');
+
+
+
+//COMMENT THIS WHEN SCHEDULE UPDATED
+
+document.write('<br><font face="Helvetica, Arial, sans-serif" color=#666666><small><small><a href="http://kcpr.calpoly.edu/music/live.html" class="style1">Listen online</a></small></small></font><br>');
+
+///////////////////// End of script ////////////////////////////////////////////////////////////////////
+
+
+
+ </script>
+</head>
+  <body bgcolor="#ffffff">
+         
+<table width="600" border="0" cellspacing="0" cellpadding="0"
+ align="center">
+      <tbody>
+        <tr>
+     <td height="29" width="468"
+ background="http://kcpr.calpoly.edu/images/indextop1.gif"
+ valign="bottom">                              
+      <div align="right" class="small">graphic arts room 201, <a
+ href="http://www.calpoly.edu/" target="_blank"><font color="#999999"
+ onmouseover="this.style.color='#009933'"
+ onmouseout="this.style.color='#999999'">california polytechnic university,
+  san luis obispo</font></a>, ca 93407  </div>
+          </td>
+     <td colspan="2">                              
+      <div align="right" valign="bottom"><a
+ href="http://kcpr.calpoly.edu/music/live.html"><img
+ src="http://kcpr.calpoly.edu/images/listen.gif" width="132" height="29"
+ border="0">
+          </a></div>
+          </td>
+        </tr>
+      <tr>
+     <td width="468" height="132"
+ background="http://kcpr.calpoly.edu/images/indextop2.gif" class="small"
+ valign="bottom">                              
+      <div align="right"><span class="small">last update: July 14, 2005</span></div>
+        </td>
+     <td rowspan="2" width="20" bgcolor="#000000"
+ background="http://kcpr.calpoly.edu/images/menubg.gif"> <br>
+        </td>
+          <td rowspan="2" width="112" bgcolor="#000000" valign="top"
+ background="http://kcpr.calpoly.edu/images/menubg.gif">                
+             
+      <p class="normaltext"><br>
+     <a href="http://kcpr.calpoly.edu/music/live.html">listen live</a><br>
+      <a href="http://kcpr.calpoly.edu/contact.html">contact us</a><br>
+      <a href="http://kcpr.proboards21.com/" target="_blank">message board</a><br>
+      <a href="http://kcpr.org/downloads">downloads</a><br>
+      <a href="http://kcpr.calpoly.edu/pledgedrive/index.html#M">merchandise</a><br>
+     <br>
+          <a href="http://kcpr.calpoly.edu/music/schedule.html">PROGRAMS</a><br>
+              <a href="http://kcpr.calpoly.edu/music/schedule.html">schedule</a><br>
+              <a href="http://kcpr.calpoly.edu/music/descriptions.html">descriptions</a><br>
+              <br>
+              <a href="http://kcpr.calpoly.edu/music/">MUSIC</a><br>
+              <a href="http://kcpr.calpoly.edu/music/charts.html">charts
+&amp;   adds</a><br>
+              <a href="http://kcpr.calpoly.edu/music">        get added</a> 
+       <br>
+              <a href="http://kcpr.calpoly.edu/music/oldcharts.html">archives</a>
+        <a href="http://kcpr.calpoly.edu/music/pcut.html"><br>
+             p-cuts</a><br>
+              <br>
+              <a href="http://kcpr.calpoly.edu/people/">PEOPLE</a><br>
+              <a href="http://kcpr.calpoly.edu/people/join.html">join   
+      us</a><br>
+              <a href="http://kcpr.calpoly.edu/people/profiles.html">profiles</a><br>
+              <a href="http://kcpr.calpoly.edu/people/alumni.html">alumni</a><br>
+              <br>
+              <a href="http://kcpr.calpoly.edu/events">EVENTS</a><br>
+              <a href="http://kcpr.calpoly.edu/events">calendar</a> <br>
+              <a href="http://kcpr.calpoly.edu/events/venues.html">venues</a><br>
+              <a href="http://kcpr.calpoly.edu/events/booking.html">booking</a><br>
+              <a href="http://kcpr.calpoly.edu/business/publicity.html">submit
+           event</a><br>
+              <a href="http://kcpr.org/sessions/">kcpr sessions</a><br>
+              <br>
+              <a href="http://kcpr.calpoly.edu/business">BUSINESS</a><br>
+              <a href="http://kcpr.calpoly.edu/business/underwrite.html">sponsor
+  us</a><br>
+              <a href="http://kcpr.calpoly.edu/business/equipment.html">mobile
+  dj</a><br>
+              <a href="http://kcpr.calpoly.edu/business/equipment.html">sound
+           system</a><br>
+              <a href="http://kcpr.calpoly.edu/contact.html">contact us</a><br>
+              <br>
+       <a href="http://kcpr.calpoly.edu/station">STATION</a><br>
+           <a href="http://kcpr.calpoly.edu/station">about</a><br>
+           <a href="http://kcpr.calpoly.edu/station/tour.html">photo tour</a><br>
+           <br>
+             <a href="http://kcpr.calpoly.edu/site.html">site map</a></p>
+          </td>
+        </tr>
+     <tr>
+      <td width="468" height="490" class="normaltext" valign="top">     
+                       
+      <table width="468" border="0" cellspacing="0" cellpadding="5">
+      <tbody>
+              <tr bgcolor="#ffffff">
+     <td class="normaltext">recent updates: <a
+ href="http://kcpr.calpoly.edu/music/charts.html" class="style1">charts</a>, 
+            <a href="http://kcpr.calpoly.edu/music/schedule.html"
+ class="style1">schedule</a>, <a href="http://kcpr.org/events/"><span class="style1">Events</span></a> </td>
+          </tr>
+     <tr bgcolor="#ffffff">
+     <td class="normaltext">                                            
+       
+            <p><strong>The Events Calender is UP TO DATE!!?!</strong> If you have anything to add contact our promotions directer at <span class="style5">kcprpromotions@gmail.com</span> (the comming months will be up by next week) </p>
+                                                             
+            <table width="462" border="0">
+              <tr>
+                <td width="222" height="106"><p class="normaltext"><b>It's KCPR Auction Time!<br>
+                  </b>Our annual auction fundraiser will be held from Monday, November 14th through&nbsp;Friday, November 18th.&nbsp; Tune into KCPR 91.3FM from 10am-6pm during auction week for your chance to bid on a variety of prize packages auctioned off every hour.&nbsp;</p>
+                    <p class="normaltext">KCPR is a non-commercial, non-profit, volunteer-run organization and we rely on&nbsp; the community and our listeners for financial support.&nbsp; Please call in and show your support for independent college radio!</p>
+                    <p class="normaltext">Stay tuned to 91.3fm for further details.&nbsp; </p></td>
+                <td width="224"><p><b><a href="music/charts.html"><img src="music/mail.jpg" width="223" height="288" border="0"></a></b></p></td>
+              </tr>
+            </table>
+            <p>&nbsp;</p>
+                                                             
+            <p> </p>        </td>
+     </tr>
+      <tr>
+        <td class="normaltext">                                         
+          
+            <p>    <strong>Upcoming KCPR events</strong><br>
+         Now: KCPR Auction <br>
+           Spring 2006: KCPR Music Festival</p>
+        </td>
+     </tr>
+     <tr>
+     <td height="25" class="normaltext"><a
+ href="http://www.calpoly.edu/" target="_blank"><font color="#999999"
+ onmouseover="this.style.color='#009933'"
+ onmouseout="this.style.color='#999999'">  <br>
+       Cal  Poly</font></a> : <a href="http://cla.calpoly.edu"
+ target="_blank"><font color="#999999"
+ onmouseover="this.style.color='#009933'"
+ onmouseout="this.style.color='#999999'">College  of Liberal Arts</font></a>
+  : <a href="http://cla.calpoly.edu/jour" target="_blank"><font
+ color="#999999" onmouseover="this.style.color='#009933'"
+ onmouseout="this.style.color='#999999'">Journalism  Dept.</font></a></td>
+     </tr>
+                                         
+        </tbody>                            
+      </table>
+       </td>
+        </tr>
+      <tr>
+      <td width="468" height="60">                                
+      <script language="JavaScript">
+
+
+
+<!-- This script and many more are available free online at -->
+
+
+
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+
+
+
+
+
+
+<!-- Begin
+
+
+
+var how_many_ads = 26;
+
+
+
+var now = new Date()
+
+
+
+var sec = now.getSeconds()
+
+
+
+var ad = sec % how_many_ads;
+
+
+
+ad +=1;
+
+
+
+if (ad==1) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#T";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/tand.JPG";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+  
+
+
+
+if (ad==2) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#S";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/stargazers.jpg";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+
+
+if (ad==3) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#S";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/screenscene_new.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+
+
+
+
+if (ad==4) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#M";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/miles.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+
+
+
+
+if (ad==5) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#I";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/icabanner.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+
+
+
+
+if (ad==6) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#B";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/beatdown_new.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+
+
+
+
+if (ad==7) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#U";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/ul.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+
+
+
+
+if (ad==8) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#K";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/sessions_new.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+
+
+if (ad==9) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#R";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/redspot.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+if (ad==10) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#D";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/darkened_new.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+if (ad==11) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#D";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/teenscene_new.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+if (ad==12) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#F";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/fuzz_new.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+
+
+
+
+if (ad==13) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#M";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/musica_new.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+if (ad==14) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#T";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/teeth2.GIF";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+
+
+if (ad==15) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#D";
+
+
+
+banner="http://kcpr.calpoly.edu/images/demnow.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+if (ad==16) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#B";
+
+
+
+banner="http://kcpr.calpoly.edu:16080/images/banners/bandw.jpg";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+if (ad==17) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#N";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/newre.jpg";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+if (ad==18) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#L";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/origami.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+if (ad==19) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#D";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/rabbit2.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+
+
+if (ad==20) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#B";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/rodeo_new.GIF";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+if (ad==21) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#A";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/audioscapes_new.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+if (ad==22) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#S";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/slaytanic.jpg";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+
+
+if (ad==23) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#P";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/punk.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+if (ad==24) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#A";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/tokyo.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+if (ad==25) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#O";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/orgasmatron.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+if (ad==26) {
+
+
+
+url="http://kcpr.calpoly.edu/music/descriptions.html#I";
+
+
+
+banner="http://kcpr.calpoly.edu/images/banners/light_new.gif";
+
+
+
+width="468";
+
+
+
+height="60";
+
+
+
+}
+
+
+
+document.write('<center>');
+
+
+
+document.write('<a href=\"' + url + '\" target=\"_top\">');
+
+
+
+document.write('<img src=\"' + banner + '\" width=')
+
+
+
+document.write(width + ' height=' + height + ' ');
+
+
+
+document.write('border=0><br>');
+
+
+
+document.write('</a>');
+
+
+
+document.write('</center>');
+
+
+
+// End -->
+
+
+
+  </script> 
+   <br>
+        </td>
+     <td colspan="2" height="60" bgcolor="#000000"
+ background="http://kcpr.calpoly.edu/images/menubg.gif"> <br>
+        </td>
+        </tr>
+     <tr>
+          <td colspan="3" height="20">                             
+      <div align="right" class="small">Copyright © 2005 KCPR 91.3fm, San
+Luis Obispo, California </div>
+          </td>
+        </tr>
+                 
+  </tbody>    
+</table>
+       
+<p align="center"> </p>
+       
+<div align="center" class="small">  </div>
+     <br>
+      <br>
+ 
+</body>
+</html>

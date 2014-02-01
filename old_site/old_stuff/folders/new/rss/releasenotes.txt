@@ -1,0 +1,54 @@
+RELEASE NOTES - rss2php
+
+  rss2php v0.2
+----------------
+
+Released 17/11/04
+
+rss2php is a library of php scripts that will parse RSS feeds, and give an
+output for php pages.
+
+You can use the library to parse multiple RSS feeds and display them on one web
+page, exactly how you want it to be displayed. rss2php is just a library of
+scripts for you to use - it will not output a nice graphical interface for you,
+it is mainly to be used so that your own pages can access RSS feeds.
+
+If you want a very nice home page with images, column layout and more, for
+multiple feeds, then you will have to download rss-homepage which will be based
+on this code.
+
+Getting Started:
+- Extract the archive to a folder that can be served to clients on your web
+  server.
+- Open up example.php (wherever it is) in your web browser. This will show you
+  a very basic example of what is possible.
+- Read example.php and use it to create your own pages to parse RSS feeds.
+- Modify update.sh to save the feeds you want to the directory where you
+  extracted the archive.
+- You will probably want to add update.sh to a cron job so that it downloads the
+  feeds every so often.
+
+At the moment rss2php contains:
+
+	* rss.php - the main RSS parsing script
+    
+	* defaultconfig.php - a default config file with instructions on how to
+		create your own
+        
+	* slashdot.php - an example config file for parsing the Slashdot RSS feed
+    
+	* example.php - a sample page that contains the output for Slashdot and BBC
+		news feeds using the slashdot and default config files
+        
+	* update.sh - a very simple script to download and cache the RSS feeds
+		needed (this will probably need to be modified by you - it downloads
+		cached feeds to ~/public_html/rss so you might want to change this)
+        
+	* bbccache.xml and slashdotcache.xml - cached feeds from the BBC and
+		Slashdot
+		
+Acknowledgements
+----------------
+A portion of the actual RSS parsing code is from a PHP tutorial by Kevin Yank,
+and the tutorial can be viewed at:
+http://www.sitepoint.com/article/php-xml-parsing-rss-1-0/4

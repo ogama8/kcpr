@@ -1,0 +1,9 @@
+.follow {
+   display: inline;
+   margin: 0 20px;
+}
+
+#externalLinks {
+   display: block;
+   text-align: center;
+}

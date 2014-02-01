@@ -1,0 +1,55 @@
+table.chartsTable {
+   border-collapse: collapse;
+   padding: 0;
+   margin: 0;
+}
+
+table.chartsTable td {
+   padding-right: 2em;
+}
+
+
+div.charts{
+   float: left;
+   padding: 0;
+   margin: 0;
+   padding-right: 3em;
+   width: 47%;
+}
+
+div.adds {
+   float: left;
+   padding: 0;
+   margin: 0;
+   width: 47%;
+}
+
+tr.rowOdd {
+   background-color: #dddddd;
+}
+
+div.charts ul, ol {
+   margin-top: 0;
+   font-size: 85%;
+   padding-left: 2em;
+}
+
+/* Archives page */
+.yearbanner {
+   margin-bottom: .5em;
+}
+
+.archives {
+   width: 100%;
+   border: solid 2px #e4e4bd;
+}
+
+.archives ul {
+   list-style-type: none;
+   margin-bottom: 0;
+}
+
+.archives td {
+   vertical-align: top;
+   padding: 1em;
+}
