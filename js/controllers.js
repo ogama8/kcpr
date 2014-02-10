@@ -18,7 +18,7 @@ angular.module('controllers', [])
    }
 })
 
-.controller('PeopleCtrl', function($scope) {
+.controller('ContactCtrl', function($scope) {
 
    $scope.people = [ 
       {
