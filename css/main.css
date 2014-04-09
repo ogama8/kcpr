@@ -40,12 +40,18 @@ a:hover {
 .important-news {
    text-align: center;
    background-color: #E8573F;
-   color: #fff;
+   color: #eee;
    padding: 10px;
    margin: 20px;
    border: none;
-   box-shadow: 3px 5px 5px  #666;
+   box-shadow: 9px 9px 0px  #CCC;
+   font-size: 150%;
 
+}
+
+.important-news a {
+   color: #fff;
+   text-decoration: underline;
 }
 
 #content {
@@ -198,8 +204,11 @@ table * {
 }
 
 table.legend td {
-   line-height: 40px;
    width: 25%;
+}
+
+tr {
+   height: 50px;
 }
 
 td, th {

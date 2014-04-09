@@ -35,7 +35,7 @@ angular.module('controllers', [])
       },
       {
          'title' : 'Promotion Directors',
-         'name' : 'Haley Brown, Bethany Benson, and Biba Pickles',
+         'name' : 'Haley Brown and Bethany Benson',
          'description' : 'Our Promotion Directors interact with the community to mutually promote community events within KCPR and KCPR at community events. If you have an announcement you would like to air on KCPR, contact the Promotion Directors.',
          'email' : 'promotions.kcpr@gmail.com'
       },
