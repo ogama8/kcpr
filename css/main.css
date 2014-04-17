@@ -101,11 +101,6 @@ playbutton {
    -webkit-box-shadow: 0px 5px 0px #00625f;
    -moz-box-shadow: 0px 5px 0px #00625f;
    box-shadow: 0px 5px 0px #00625f;
-   -webkit-transition: all .1s ease;
-   -moz-transition: all .1s ease;
-   -ms-transition: all .1s ease;
-   -o-transition: all .1s ease;
-   transition: all .1s ease;
 }
 
 playbutton.on {
@@ -114,7 +109,6 @@ playbutton.on {
    -moz-box-shadow: 0px 2px 0px #00625f;
    box-shadow: 0px 2px 0px #00625f;
    top: 3px;
-   transition: all .1s ease;
 }
 
 playbutton:active {
@@ -245,4 +239,24 @@ div#view p {
 
 div#view h3 {
    margin: 20px 0;
+}
+
+.pledge-centered {
+   display: block;
+   margin: 10px auto;
+}
+
+table.pledge td {
+   padding: 5px;
+
+}
+
+/*
+a.glow {
+   -webkit-animation: glow 5s ease-in-out 0s infinite alternate;
+}
+   */
+
+@-webkit-keyframes glow {
+   from { background-color: auto; box-shadow: 0px 0px 5px rgba(0,0,0,0); } to { background-color: #666; box-shadow: 0px 0px 100px #DFBA39; }
 }

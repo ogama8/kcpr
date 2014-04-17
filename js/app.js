@@ -5,7 +5,7 @@ angular.module('kcpr-app', ['ngRoute', 'controllers', 'loadscript'])
 .config(function($routeProvider) {
 
    
-   $routeProvider.when("/", {
+   $routeProvider.when("/news", {
       templateUrl: 'partials/news.html'
    });
 
@@ -35,7 +35,10 @@ angular.module('kcpr-app', ['ngRoute', 'controllers', 'loadscript'])
    $routeProvider.when("/about", {
       templateUrl: 'partials/about.html'
    });
+   $routeProvider.when("/pledge", {
+      templateUrl: 'partials/pledge.html'
+   });
 
-   $routeProvider.otherwise({ redirectTo: "/" });
+   $routeProvider.otherwise({ redirectTo: "/pledge" });
 
 })
