@@ -251,6 +251,10 @@ table.pledge td {
 
 }
 
+table.pledge ul li {
+   text-align: left;
+}
+
 /*
 a.glow {
    -webkit-animation: glow 5s ease-in-out 0s infinite alternate;
