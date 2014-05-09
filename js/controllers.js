@@ -20,7 +20,7 @@ angular.module('controllers', [])
 
 .controller('ContactCtrl', function($scope) {
 
-   $scope.people = [ 
+   $scope.people = [
       {
          'title': 'General Managers',
          'name': 'Tyler Deitz and Jorge Gonzales',
@@ -70,8 +70,8 @@ angular.module('controllers', [])
          'email' : 'events.kcpr@gmail.com'
       },
       {
-         'title' : 'Webmaster',
-         'name' : 'Eric Buckthal',
+         'title' : 'Internet Director',
+         'name' : 'Eli Backer',
          'description' : 'Our Webmaster maintains our online presence. If you have something you would like to see on our website or a question about this website, contact them.',
          'email' : 'kcpr.internet@gmail.com'
       },
@@ -82,7 +82,7 @@ angular.module('controllers', [])
          'email' : ''
       }
 
-   ] 
+   ]
 
 })
 
