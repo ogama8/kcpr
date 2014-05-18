@@ -1,2 +1,6 @@
 transparent favicon
+
 change 'pledge' to 'donate' and redesign the page
+
+OPERATION: SEXY URLS 
+scotch.io/quick-tips/js/angular/pretty-urls-in-angularjs-removing-the-hashtag
