@@ -22,8 +22,8 @@ angular.module('controllers', [])
 
    $scope.people = [
       {
-         'title': 'General Managers',
-         'name': 'Tyler Deitz and Jorge Gonzales',
+         'title': 'General Manager',
+         'name': 'Tyler Deitz',
          'description' : 'Our General Managers oversee all other KCPR executives, DJs, and functions. They are often our liasons with entities outside of KCPR. If you have a question about KCPR that doesn\'t fit with any of the other executes, shoot them an email.',
          'email': 'generalmanagers.kcpr@gmail.com'
       },
@@ -59,7 +59,7 @@ angular.module('controllers', [])
       },
       {
          'title' : 'Air Staff Instructors',
-         'name' : 'Logan Cooper and Lauren Vukicevich',
+         'name' : 'Lauren Vukicevich',
          'description' : 'Our Air Staff Instructors train new DJs. If you have a question about the training process, please contact them.',
          'email' : 'kcpr91.3asi@gmail.com'
       },
