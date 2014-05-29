@@ -24,7 +24,7 @@ angular.module('controllers', [])
       {
          'title': 'General Manager',
          'name': 'Tyler Deitz',
-         'description' : 'Our General Managers oversee all other KCPR executives, DJs, and functions. They are often our liasons with entities outside of KCPR. If you have a question about KCPR that doesn\'t fit with any of the other executes, shoot them an email.',
+         'description' : 'Our General Manager oversee all other KCPR executives, DJs, and functions. They are often our liasons with entities outside of KCPR. If you have a question about KCPR that doesn\'t fit with any of the other executes, shoot them an email.',
          'email': 'generalmanagers.kcpr@gmail.com'
       },
       {
@@ -46,33 +46,33 @@ angular.module('controllers', [])
          'email' : 'music.kcpr@gmail.com'
       },
       {
-         'title' : 'Program Directors',
+         'title' : 'Program Director',
          'name' : 'Kelly Stewart',
-         'description' : 'Our Program Directors schedule KCPR\'s quarterly schedule. They are also in charge of our broadcast quality control. If you have a concern about content on KCPR, please email the Program Director.',
+         'description' : 'Our Program Director schedule KCPR\'s quarterly schedule. They are also in charge of our broadcast quality control. If you have a concern about content on KCPR, please email the Program Director.',
          'email' : 'programming.kcpr@gmail.com'
       },
       {
-         'title' : 'Traffic Directors',
+         'title' : 'Traffic Director',
          'name' : 'Connor Griffith',
-         'description' : 'Our Traffic Directors schedule public service announcement and underwriting. If you have a community announcement you think KCPR would like to broadcast, contact him with information about the event at least two weeks prior.',
+         'description' : 'Our Traffic Director schedule public service announcement and underwriting. If you have a community announcement you think KCPR would like to broadcast, contact them with information about the event at least two weeks prior.',
          'email' : 'traffic.kcpr@gmail.com'
       },
       {
-         'title' : 'Air Staff Instructors',
+         'title' : 'Air Staff Instructor',
          'name' : 'Lauren Vukicevich',
-         'description' : 'Our Air Staff Instructors train new DJs. If you have a question about the training process, please contact them.',
+         'description' : 'Our Air Staff Instructor trains new DJs. If you have a question about the training process, please contact them.',
          'email' : 'kcpr91.3asi@gmail.com'
       },
       {
-         'title' : 'Events Directors',
+         'title' : 'Events Director',
          'name' : 'Parker Glenn',
-         'description' : 'Our Events Directors host KCPR-sponsored events. If you are a band or promoter who would like to schedule an appearence on KCPR or in the community, the Events Directors have the information you need.',
+         'description' : 'Our Events Director host KCPR-sponsored events. If you are a band or promoter who would like to schedule an appearence on KCPR or in the community, the Events Director have the information you need.',
          'email' : 'events.kcpr@gmail.com'
       },
       {
          'title' : 'Internet Director',
          'name' : 'Eli Backer',
-         'description' : 'Our Webmaster maintains our online presence. If you have something you would like to see on our website or a question about this website, contact them.',
+         'description' : 'Our Webmaster maintains our online presence. If you have something you would like to see on our website or a question about this website, please contact them.',
          'email' : 'kcpr.internet@gmail.com'
       },
       {
