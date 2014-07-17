@@ -1,5 +1,3 @@
-transparent favicon
-
 change 'pledge' to 'donate' and redesign the page
 
 OPERATION: SEXY URLS 
