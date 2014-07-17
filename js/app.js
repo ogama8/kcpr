@@ -2,8 +2,9 @@ var gdocs = 'https://spreadsheets.google.com/feeds/list/0Ao8Bu17C9mFydFUyWDJXaF9
 
 angular.module('kcpr-app', ['ngRoute', 'controllers', 'loadscript'])
 
-.config(function($routeProvider, $locationProvider) {
-
+//TO BE IMPLEMTED WHEN WE GET THE RIGHT SERVER CONFIGURATION
+//.config(function($routeProvider, $locationProvider) {
+.config(function($routeProvider) {
 
    $routeProvider
       .when("/news", {
@@ -40,6 +41,7 @@ angular.module('kcpr-app', ['ngRoute', 'controllers', 'loadscript'])
       })
       .otherwise({ redirectTo: "/news" });
 
-   $locationProvider.html5Mode(true);
+   //TO BE IMPLEMTED WHEN WE GET THE RIGHT SERVER CONFIGURATION
+   //$locationProvider.html5Mode(true);
 
 });
