@@ -23,7 +23,7 @@ angular.module('controllers', [])
    $scope.people = [
       {
          'title': 'General Manager',
-         'name': 'Tyler Deitz',
+         'name': 'Parker Glenn',
          'description' : 'Our General Manager oversee all other KCPR executives, DJs, and functions. They are often our liasons with entities outside of KCPR. If you have a question about KCPR that doesn\'t fit with any of the other executes, shoot them an email.',
          'email': 'generalmanagers.kcpr@gmail.com'
       },
