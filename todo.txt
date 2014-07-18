@@ -1,3 +1,5 @@
+make an ADA compliant fallback site lol (this admin told us we have to)
+
 add google analytics
 
 change 'pledge' to 'donate' and redesign the page
