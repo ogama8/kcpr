@@ -1,9 +1,0 @@
-make an ADA compliant fallback site lol (this admin told us we have to)
-
-add google analytics
-
-change 'pledge' to 'donate' and redesign the page
-
-OPERATION: SEXY URLS 
-https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-configure-your-server-to-work-with-html5mode
-scotch.io/quick-tips/js/angular/pretty-urls-in-angularjs-removing-the-hashtag
