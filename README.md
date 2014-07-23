@@ -15,3 +15,4 @@ todo
 - add google analytics
 - make an ADA compliant fallback site lol (this admin told us we have to)
 - make favicon stop reloading (?) on every page
+- change links on twitter newsfeed to be red instead of default color
