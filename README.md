@@ -1,4 +1,4 @@
-kcpr-web
+kcpr
 ========
 
 setting up on a local server
