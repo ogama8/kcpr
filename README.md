@@ -1,4 +1,4 @@
-kcpr
+[kcpr](http://kcpr.org/)
 ========
 
 setting up on a local server
