@@ -16,4 +16,3 @@ todo
 - make an ADA compliant fallback site lol (this admin told us we have to)
 - make favicon stop reloading (?) on every page
  - this may be a webkit bug aka not our problem but maybe not [(src)](https://code.google.com/p/chromium/issues/detail?id=50298)
-- change links on twitter newsfeed to be red instead of default color
