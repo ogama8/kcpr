@@ -28,23 +28,23 @@
    <div id="middlebar">
    <loc>SAN LUIS OBISPO, CALIFORNIA</loc>
       <playbutton ng-show="(a.volume == 0)" ng-click="a.volume = 1">
-         stream&nbsp;&nbsp;
+         listen&nbsp;&nbsp;
          <i class="fa fa-volume-off"></i>
       </playbutton>
       <playbutton class="on" ng-hide="(a.volume == 0)" ng-click="a.volume = 0">
-         stream&nbsp;
+         listen&nbsp;
          <i class="fa fa-volume-up"></i>
       </playbutton>
    </div>
 
    <div id="header">
+      <a href="#/about" ng-class="{active : $location.path() == '/about' }">About</a>
       <a href="#/news" ng-class="{ active : $location.path() == '/news' }">News</a>
       <a href="#/schedule" ng-class="{active : $location.path() == '/schedule' }">Schedule</a>
+      <a href="#/listen" ng-class="{active : $location.path() == '/listen' }">Listen</a>
       <a href="#/join" ng-class="{active : $location.path() == '/join' }">Join</a>
       <a href="#/contact" ng-class="{active : $location.path() == '/contact' }">contact</a>
-      <a href="#/about" ng-class="{active : $location.path() == '/about' }">About</a>
-      <a href="#/listen" ng-class="{active : $location.path() == '/listen' }">Listen</a>
-<!--      <a href="#/pledge" class="glow" ng-class="{active : $location.path() == '/pledge' }">Pledge</a>  -->
+      <a href="#/donate" class="glow" ng-class="{active : $location.path() == '/donate' }">Donate</a>
    </div>
    </div>
 

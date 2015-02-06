@@ -33,10 +33,10 @@ angular.module('kcpr-app', ['ngRoute', 'controllers', 'loadscript'])
       .when("/about", {
          templateUrl: 'partials/about.html'
       })
-      .when("/pledge", {
-         templateUrl: 'partials/pledge.html'
+      .when("/donate", {
+         templateUrl: 'partials/donate.html'
       })
-      .otherwise({ redirectTo: "/news" });
+      .otherwise({ redirectTo: "/donate" });
 
    $locationProvider.html5Mode(true);
 });

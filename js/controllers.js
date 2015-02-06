@@ -34,9 +34,9 @@ angular.module('controllers', [])
          'email' : 'kcpr.outreach@gmail.com'
       },
       {
-         'title' : 'Promotion & Underwriting Director and Assistant Promotion & Underwriting Director',
-         'name' : 'Haley Brown and Erica Hudson',
-         'description' : 'Our Promotion & Underwriting team handle partnerships with the station and coordinate on-air performances. If you have an announcement you would like to air on KCPR, contact the Promotion & Underwriting team.',
+         'title' : 'Promotion & Underwriting Director',
+         'name' : 'Haley Brown',
+         'description' : 'Our Promotion & Underwriting team handles partnerships with the station and coordinates on-air performances. If you have an announcement you would like to air on KCPR, contact the Promotion & Underwriting team.',
          'email' : 'kcpr.promotion@gmail.com'
       },
       {
