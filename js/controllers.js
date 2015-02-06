@@ -28,7 +28,7 @@ angular.module('controllers', [])
          'email': 'kcpr.generalmanager@gmail.com'
       },
       {
-         'title' : 'Outreach Director',
+         'title' : 'Marketing Director',
          'name' : 'Leona Rajaee',
          'description' : 'Our Outreach Director serves as our liaison with entities outside of KCPR.  They also manage communications between the station and all current and former KCPR DJs. If you would like to reach the KCPR community or have any KCPR-related questions, let them know.',
          'email' : 'kcpr.outreach@gmail.com'
